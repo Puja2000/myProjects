@@ -52,6 +52,7 @@ const useForeCast = () => {
     trem,
     options,
     forecast,
+    setForecast,
     onInputChange,
     onOptionSelect,
     onSubmit
