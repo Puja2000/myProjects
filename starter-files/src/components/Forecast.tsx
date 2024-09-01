@@ -1,4 +1,3 @@
-import { spawn } from "child_process"
 import { forecastType } from "../types"
 import Sunrise from "./Icons/Sunrise"
 import { getHumidityValue, getPop, getSunTime, getVisibilityValue, getWindDirection } from "../helpers"

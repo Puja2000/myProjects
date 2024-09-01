@@ -42,3 +42,18 @@ export type forecastType = {
         }
     ]
 }
+
+export interface weatherContextType {
+    // data : forecastType | null
+    term : string | ''
+    setTerm : React.Dispatch<React.SetStateAction<string>>
+    options : [],
+    setOptions : React.Dispatch<React.SetStateAction<[]>>,
+    searchCity : optionType | null,
+    setSearchCity: React.Dispatch<React.SetStateAction<optionType | null>>,
+    forecast : forecastType | null,
+    setForecast :  React.Dispatch<React.SetStateAction<forecastType | null>>,
+    getForecast : (searchCity : optionType) => void
+    // fetchOption : (value : string) => Promise<void>
+    // fetchData : (city : string) => Promise<void>
+}
